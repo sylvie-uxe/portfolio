@@ -1,6 +1,8 @@
 ---
 title: "My portfolio"
-date: "2020-10-10"
+date: "April 2021"
+role: "UX/UI designer, Front-End developer"
+tools: "Adobe Comp/Fresco/Illustrator/XD, React, Gatsby, SaSS"
 ---
 
 Pandas are really sweet.

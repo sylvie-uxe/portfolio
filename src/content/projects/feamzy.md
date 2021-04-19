@@ -1,6 +1,8 @@
 ---
 title: "feamzy"
-date: "2017-08-21"
+date: "January 2021 - Current"
+role: "UX Engineer"
+tools: "Adobe XD, Angular, TypeScript, HTML, SaSS, RxJS"
 ---
 
 Do Pandas eat bananas? Check out this short video that shows that yes! pandas do seem to really enjoy bananas!

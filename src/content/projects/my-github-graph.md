@@ -1,6 +1,8 @@
 ---
 title: "My Github Graph"
-date: "2020-10-10"
+date: "December 2020 - January 2021"
+role: "Front-End developer"
+tools: "HTML, CSS, JavaScript"
 ---
 
 Pandas are really sweet.

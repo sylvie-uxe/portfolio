@@ -1,6 +1,8 @@
 ---
 title: "Insult Therapy"
-date: "2020-10-10"
+date: "December 2020 - April 2021"
+role: "UX/UI designer, Front-End developer"
+tools: "Angular, TypeScript, HTML, SaSS, RxJS, Firebase, Firestore"
 ---
 
 Pandas are really sweet.

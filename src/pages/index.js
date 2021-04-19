@@ -2,10 +2,12 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 export default function Home({ data }) {
   return (
     <Layout>
+      <Seo title="About"/>
       <p>Hi, I'm</p>
       <h1>{data.site.siteMetadata.title}</h1>
       <p>I design and I code.</p>

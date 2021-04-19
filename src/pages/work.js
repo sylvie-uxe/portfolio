@@ -1,11 +1,13 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 export default function Work({ data }) {
   return (
     <Layout>
+      <Seo title="Work"/>
       <h1>Work</h1>
       <h4>{data.allMarkdownRemark.totalCount} projects</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -16,6 +18,9 @@ export default function Work({ data }) {
                 — {node.frontmatter.date}
               </span>
             </h3>
+            <Link to={node.fields.slug}>Details</Link>
+            <p>Role: {node.frontmatter.role}</p>
+            <p>Tools: {node.frontmatter.tools}</p>
             <p>{node.excerpt}</p>
           </div>
         ))}
@@ -32,7 +37,12 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date
+            role
+            tools
+          }
+          fields {
+            slug
           }
           excerpt
         }

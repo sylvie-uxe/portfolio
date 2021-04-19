@@ -1,6 +1,8 @@
 ---
 title: "Covivre"
-date: "2020-10-10"
+date: "October 2020 - November 2020"
+role: "UX Designer"
+tools: "Adobe XD/After Effects/Zeplin"
 ---
 
 Pandas are really sweet.
