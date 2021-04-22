@@ -1,7 +1,39 @@
-@import './themes/themes_dir';
-
 html {
     margin: 0;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    max-width: 1200px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+header {
+    ul {
+        list-style-type: none;
+        float: right;
+
+        li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        button#colorSwitch {
+            padding: 0;
+            vertical-align: middle;
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    a, a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .activeLink {
+        text-decoration: underline;
+    }
 }
