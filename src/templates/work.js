@@ -6,10 +6,10 @@ export default function Work({ data }) {
   const work = data.markdownRemark;
   return (
     <Layout>
-      <h1>{ work.frontmatter.title }</h1>
+      <h1>{work.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: work.html }} />
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`

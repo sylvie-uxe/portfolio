@@ -7,23 +7,20 @@ import Seo from "../components/seo";
 export default function Work({ data }) {
   return (
     <Layout>
-      <Seo title="Work"/>
+      <Seo title="Work" />
       <h1>Work</h1>
       <h4>{data.allMarkdownRemark.totalCount} projects</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <h3>
-              {node.frontmatter.title}{" "}
-              <span>
-                — {node.frontmatter.date}
-              </span>
-            </h3>
-            <Link to={node.fields.slug}>Details</Link>
-            <p>Role: {node.frontmatter.role}</p>
-            <p>Tools: {node.frontmatter.tools}</p>
-            <p>{node.excerpt}</p>
-          </div>
-        ))}
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id}>
+          <h3>
+            {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
+          </h3>
+          <Link to={node.fields.slug}>Details</Link>
+          <p>Role: {node.frontmatter.role}</p>
+          <p>Tools: {node.frontmatter.tools}</p>
+          <p>{node.excerpt}</p>
+        </div>
+      ))}
     </Layout>
   );
 }
@@ -49,4 +46,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

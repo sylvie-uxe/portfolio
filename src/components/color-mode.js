@@ -53,7 +53,8 @@ export default function ColorMode() {
   }, [animationContainer, mode, setMode]);
 
   return (
-    <Button variant="ninja"
+    <Button
+      variant="ninja"
       ref={animationContainer}
       id="colorSwitch"
       aria-label="Dark/light mode switch"

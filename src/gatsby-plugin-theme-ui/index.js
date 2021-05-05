@@ -1,8 +1,10 @@
 const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body: 'system-ui, -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif',
-    heading: 'system-ui, -apple-system, BlinkMacSystemFont, aktiv-grotesk, sans-serif',
+    body:
+      'system-ui, -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif',
+    heading:
+      "system-ui, -apple-system, BlinkMacSystemFont, aktiv-grotesk, sans-serif",
     monospace: '"Roboto Mono", monospace',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
@@ -22,17 +24,17 @@ const theme = {
     accent: "#eb4f83",
     modes: {
       dark: {
-        text: '#fefefe',
-        background: '#0c1219',
-        primary: '#33383f',
-        accent: '#eb4f83',
-      }
+        text: "#fefefe",
+        background: "#0c1219",
+        primary: "#33383f",
+        accent: "#eb4f83",
+      },
     },
   },
   buttons: {
     ninja: {
-      color: 'background',
-      bg: 'background'
+      color: "background",
+      bg: "background",
     },
   },
   styles: {

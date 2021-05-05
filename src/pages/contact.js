@@ -5,7 +5,7 @@ import Seo from "../components/seo";
 export default function Contact() {
   return (
     <Layout>
-      <Seo title="Contact"/>
+      <Seo title="Contact" />
       <h1>Contact</h1>
     </Layout>
   );
