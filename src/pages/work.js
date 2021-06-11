@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import Img from "gatsby-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -9,6 +10,10 @@ export default function Work({ data }) {
     <Layout>
       <Seo title="Work" />
       <h1>Work</h1>
+      <Img
+        fluid={data.file.childImageSharp.fluid}
+        alt={"My Github Graph"}
+        />
       <h4>{data.allMarkdownRemark.totalCount} projects</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
@@ -27,6 +32,15 @@ export default function Work({ data }) {
 
 export const query = graphql`
   query {
+    file(
+      relativePath: { eq: "my-github-graph.png" }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
