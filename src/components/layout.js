@@ -1,10 +1,11 @@
 import React from "react";
 import "@fontsource/open-sans"; // Defaults to weight 400 with all styles included.
-import Footer from "./footer";
 import { useStaticQuery, graphql } from "gatsby";
+import Seo from "./seo";
 import Header from "./header";
+import Footer from "./footer";
 
-export default function Layout({ children }) {
+function Layout({ children }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,9 +27,12 @@ export default function Layout({ children }) {
       <a href="#primary">
         Skip to the content
       </a>
+      <Seo/>
       <Header menuLinks={site.siteMetadata.menuLinks}/>
       <main id="primary">{children}</main>
       <Footer siteTitle={site.siteMetadata.title}/>
     </>
   );
 }
+
+export default Layout;

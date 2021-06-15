@@ -2,7 +2,13 @@
 title: "feamzy"
 date: "January 2021 - Current"
 role: "UX Engineer"
-tools: "Adobe XD, Angular, TypeScript, HTML, SaSS, RxJS"
+tools:
+    - Adobe XD
+    - Angular
+    - TypeScript
+    - HTML
+    - Sass
+    - RxJS
 ---
 
 Do Pandas eat bananas? Check out this short video that shows that yes! pandas do seem to really enjoy bananas!

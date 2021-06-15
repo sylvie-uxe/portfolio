@@ -1,8 +1,12 @@
 ---
-title: "My Github Graph"
-date: "December 2020 - January 2021"
-role: "Front-End developer"
-tools: "HTML, CSS, JavaScript"
+title: "Covivre"
+date: "October 2020 - November 2020"
+cover: "./cover.png"
+role: "UX Designer"
+tools:
+    - Adobe XD
+    - After Effects
+    - Zeplin
 ---
 
 Pandas are really sweet.

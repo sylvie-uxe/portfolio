@@ -8,30 +8,27 @@ module.exports = {
     menuLinks: [
       {
         name: `About`,
-        link: `/`
+        link: `#about`
       },
       {
         name: `Work`,
-        link: `/work`
+        link: `#work`
       },
       {
         name: `Resume`,
-        link: `/resume`
+        link: `#resume`
       },
       {
         name: `Contact`,
-        link: `/contact`
-      },
-      {
-        name: `New`,
-        link: `/new`
-      },
+        link: `#contact`
+      }
     ]
   },
   plugins: [
     `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -48,20 +45,13 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-remark-images`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 1080,
-              quality: 100,
-            },
-          },
-        ],
+        // It's important to specify the maxWidth (in pixels) of
+        // the content container as this plugin uses this as the
+        // base for generating different widths of each image.
+        maxWidth: 1080,
+        quality: 100,
       },
     },
     `gatsby-plugin-react-helmet`,

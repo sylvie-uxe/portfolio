@@ -1,8 +1,12 @@
 ---
-title: "My portfolio"
-date: "April 2021"
-role: "UX/UI designer, Front-End developer"
-tools: "Adobe Comp/Fresco/Illustrator/XD, React, Gatsby, SaSS"
+title: "My Github Graph"
+date: "December 2020 - January 2021"
+cover: "./cover.png"
+role: "Front-End developer"
+tools:
+    - HTML
+    - CSS
+    - JavaScript
 ---
 
 Pandas are really sweet.

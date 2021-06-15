@@ -3,7 +3,7 @@ import lottie from "lottie-web";
 
 import animationData from "../animations/dark-mode-switcher.json";
 
-export default function Lottie(props) {
+function Lottie(props) {
   console.log(`Mode in Lottie = ${props.mode}`);
   const animationContainer = createRef();
 
@@ -24,3 +24,5 @@ export default function Lottie(props) {
 
   return <div ref={animationContainer}>{props.mode}</div>;
 }
+
+export default Lottie;

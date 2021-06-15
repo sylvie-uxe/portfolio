@@ -2,7 +2,14 @@
 title: "Insult Therapy"
 date: "December 2020 - April 2021"
 role: "UX/UI designer, Front-End developer"
-tools: "Angular, TypeScript, HTML, SaSS, RxJS, Firebase, Firestore"
+tools:
+    - Angular
+    - TypeScript
+    - HTML
+    - Sass
+    - RxJS
+    - Firebase
+    - Firestore
 ---
 
 Pandas are really sweet.

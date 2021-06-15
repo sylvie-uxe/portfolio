@@ -4,7 +4,7 @@ import lottie from "lottie-web";
 
 import animationData from "../animations/dark-mode-switcher.json";
 
-export default function ColorMode() {
+function ColorMode() {
   const [mode, setMode] = useColorMode();
   let animationContainer = createRef();
 
@@ -61,3 +61,5 @@ export default function ColorMode() {
     ></Button>
   );
 }
+
+export default ColorMode;

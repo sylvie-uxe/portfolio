@@ -1,8 +1,12 @@
 ---
-title: "Covivre"
-date: "October 2020 - November 2020"
-role: "UX Designer"
-tools: "Adobe XD/After Effects/Zeplin"
+title: "My portfolio"
+date: "April 2021"
+role: "UX/UI designer, Front-End developer"
+tools:
+    - Adobe Comp/Fresco/Illustrator/XD
+    - React
+    - Gatsby
+    - Sass
 ---
 
 Pandas are really sweet.
