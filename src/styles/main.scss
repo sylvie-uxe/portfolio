@@ -14,35 +14,71 @@ body {
 
 header, main, footer {
     max-width: 1320px;
-    padding: 1rem;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
     ul {
         list-style-type: none;
-        float: right;
+        margin: 0 16px;
+        padding: 0;
 
         li {
             display: inline-block;
-            margin-right: 1rem;
+            margin: 0 1.5rem;
+        }
+
+        li>a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        li>a:hover, li>a:active, li.active>a {
+            color: #055BA6;
+        }
+
+        li>a:active::after, li.active>a::after {
+            content: "";
+            border-bottom: 4px solid #055BA6;
+            width: 100%;
+            display: block;
+        }
+
+        li>a:focus {
+            outline: none;
+            color: #eb4f83;
+        }
+
+        li>a:focus::after {
+            content: "";
+            border-bottom: 4px solid #eb4f83;
+            width: 100%;
+            display: block;
         }
 
         button#colorSwitch {
-            padding: 0;
             vertical-align: middle;
             width: 80px;
             height: 80px;
         }
     }
 
-    a, a:visited {
-        color: inherit;
-        text-decoration: none;
+    #logo {
+        margin: 16px 0;
     }
 
-    .activeLink {
-        text-decoration: underline;
+    #colorSwitch {
+        cursor: pointer;
     }
+
+    #logo:focus, #colorSwitch:focus {
+        outline: 3px dashed #eb4f83;
+        outline-offset: 10px;
+    }
+
 }
 
 main {
@@ -64,4 +100,10 @@ footer {
 
 .flex-box {
     width: 400px;
+}
+
+#hero {
+    p {
+        max-width: 900px;
+    }
 }

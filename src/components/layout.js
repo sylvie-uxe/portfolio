@@ -24,9 +24,9 @@ function Layout({ children }) {
 
   return (
     <>
-      <Themed.a href="#primary">
+      {/* <Themed.a href="#primary">
         Skip to the content
-      </Themed.a>
+      </Themed.a> */}
       <Seo/>
       <Header menuLinks={site.siteMetadata.menuLinks}/>
       <main id="primary">{children}</main>

@@ -50,8 +50,8 @@ function Work() {
 
           return(
           <div className="flex-box" key={i}>
-            <Link to={slug}>
-              <GatsbyImage image={image} alt={altText}/>
+            <GatsbyImage image={image} alt={altText}/>
+            <Link to={slug}>Details
             </Link>
             <Themed.h3>
               {title} <span>— {date}</span>
