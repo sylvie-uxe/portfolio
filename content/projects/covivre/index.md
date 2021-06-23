@@ -1,7 +1,7 @@
 ---
 title: "Covivre"
 date: "October 2020 - November 2020"
-cover: "./cover.png"
+cover: "./cover.jpg"
 role: "UX Designer"
 tools:
     - Adobe XD

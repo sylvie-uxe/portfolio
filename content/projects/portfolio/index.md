@@ -2,6 +2,7 @@
 title: "My portfolio"
 date: "April 2021"
 role: "UX/UI designer, Front-End developer"
+cover: "./cover.jpg"
 tools:
     - Adobe Comp/Fresco/Illustrator/XD
     - React

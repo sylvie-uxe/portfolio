@@ -1,9 +1,9 @@
 import React from "react";
-import "@fontsource/open-sans"; // Defaults to weight 400 with all styles included.
 import { useStaticQuery, graphql } from "gatsby";
 import Seo from "./seo";
 import Header from "./header";
 import Footer from "./footer";
+import { Themed } from 'theme-ui';
 
 function Layout({ children }) {
   const { site } = useStaticQuery(
@@ -24,9 +24,9 @@ function Layout({ children }) {
 
   return (
     <>
-      <a href="#primary">
+      <Themed.a href="#primary">
         Skip to the content
-      </a>
+      </Themed.a>
       <Seo/>
       <Header menuLinks={site.siteMetadata.menuLinks}/>
       <main id="primary">{children}</main>

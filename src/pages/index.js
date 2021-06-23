@@ -1,5 +1,4 @@
 import React from "react";
-import { graphql } from "gatsby";
 
 import { Layout, Hero, About, Work, Resume, Contact } from "../components";
 
@@ -14,15 +13,5 @@ function Home() {
     </Layout>
   );
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
 
 export default Home;

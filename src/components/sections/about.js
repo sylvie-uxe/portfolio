@@ -1,10 +1,11 @@
 import React from 'react';
+import { Themed } from 'theme-ui';
 
 function About() {
     return (
         <section id="about">
-            <h2>About</h2>
-            <p>About</p>
+            <Themed.h2>About</Themed.h2>
+            <Themed.p>About</Themed.p>
         </section>
     );
 }

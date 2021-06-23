@@ -1,6 +1,7 @@
 ---
 title: "feamzy"
 date: "January 2021 - Current"
+cover: "./cover.jpg"
 role: "UX Engineer"
 tools:
     - Adobe XD

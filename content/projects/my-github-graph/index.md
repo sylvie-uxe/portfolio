@@ -1,7 +1,7 @@
 ---
 title: "My Github Graph"
 date: "December 2020 - January 2021"
-cover: "./cover.png"
+cover: "./cover.jpg"
 role: "Front-End developer"
 tools:
     - HTML

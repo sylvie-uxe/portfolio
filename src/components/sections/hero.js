@@ -1,19 +1,25 @@
 import React from 'react';
+import { Themed } from 'theme-ui';
 
 function Hero() {
     return (
         <section id="hero">
-            <p>Hi, I'm</p>
-            <h2>Sylvie Donatien</h2>
-            <p>I design and I code.</p>
+            <Themed.p>Hi, I'm</Themed.p>
+            <Themed.h2>Sylvie Donatien</Themed.h2>
+            <Themed.p>I design and I code.</Themed.p>
             <br />
-            <p>
-                I'm a User eXperience engineer. I'm passionate about bringing joy to
+            <Themed.p>
+                I'm a User eXperience Designer and a Front-End Developer.
+            </Themed.p>
+            <Themed.p>
+                I'm passionate about bringing joy to
                 people's lives through valuable, equitable and simple design. I then
-                write reliable and extensible code to make the dream come true.
+                write reliable and extensible code to make the design come to life.
+            </Themed.p>
+            <Themed.p>
                 Curiosity, a constant search for improvement and a passion for learning
                 are my driving forces.
-            </p>
+            </Themed.p>
         </section>
     );
 }

@@ -2,6 +2,7 @@
 title: "Insult Therapy"
 date: "December 2020 - April 2021"
 role: "UX/UI designer, Front-End developer"
+cover: "./cover.jpg"
 tools:
     - Angular
     - TypeScript

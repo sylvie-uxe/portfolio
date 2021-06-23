@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
   siteMetadata: {
     title: `Sylvie Donatien`,
-    description: `Sylvie Donatien is a UX Engineer who designs valuable and enjoyable digital experiences for all and codes in JavaScript, TypeScript, Angular and React to make those experiences come true.`,
+    description: `Sylvie Donatien is a UX Designer and Front-End Developer who designs valuable and enjoyable digital experiences for all and codes in JavaScript, TypeScript, Angular and React to make those experiences come true.`,
     author: `Sylvie Donatien`,
     menuLinks: [
       {
@@ -56,14 +56,6 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-theme-ui`,
-    {
-      resolve: `gatsby-plugin-web-font-loader`,
-      options: {
-        typekit: {
-          id: process.env.TYPEKIT_ID,
-        },
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

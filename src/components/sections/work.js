@@ -1,6 +1,7 @@
 import React from "react";
 import {useStaticQuery, graphql, Link} from "gatsby";
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+import { Themed } from 'theme-ui';
 
 function Work() {
   const data = useStaticQuery(
@@ -15,7 +16,7 @@ function Work() {
                 title
                 cover {
                   childImageSharp {
-                    gatsbyImageData(width: 200, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                    gatsbyImageData(width: 600, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                   }
                 }
                 date
@@ -37,25 +38,28 @@ function Work() {
 
   return (
     <section id="work">
-      <h2>Work</h2>
+      <Themed.h2>Work</Themed.h2>
+      <div className="flex-container">
       {
         projects && projects.map( ({ node }, i) => {
           const { frontmatter, fields, excerpt } = node;
           const { title, cover, date, role, tools } = frontmatter;
           const { slug } = fields;
           const image = getImage(cover);
+          const altText = "Project " + title;
 
           return(
-          <div key={i}>
-            <GatsbyImage image={image} />
-            <h3>
+          <div className="flex-box" key={i}>
+            <Link to={slug}>
+              <GatsbyImage image={image} alt={altText}/>
+            </Link>
+            <Themed.h3>
               {title} <span>— {date}</span>
-            </h3>
-            <Link to={slug}>Details</Link>
-            <p>Role: {role}</p>
+            </Themed.h3>
+            <Themed.p>Role: {role}</Themed.p>
             {tools.length && (
               <>
-                <p>Tools:</p>
+                <Themed.p>Tools:</Themed.p>
                 <ul>
                   {tools.map((tool, i) => (
                     <li key={i}>{tool}</li>
@@ -63,11 +67,12 @@ function Work() {
                 </ul>
               </>
             )}
-            <p>{excerpt}</p>
+            <Themed.p>{excerpt}</Themed.p>
           </div>
         );
         })
       }
+      </div>
     </section>
   );
 }
