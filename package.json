@@ -16,6 +16,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/material-icons-rounded": "^4.4.5",
     "@fontsource/montserrat": "^4.4.5",
     "@fontsource/prompt": "^4.4.5",
     "@fontsource/roboto-mono": "^4.4.5",
@@ -23,7 +24,6 @@
     "gatsby-image": "^3.4.0",
     "gatsby-plugin-image": "^1.7.1",
     "gatsby-plugin-manifest": "^3.3.0",
-    "gatsby-plugin-offline": "^4.6.0",
     "gatsby-plugin-react-helmet": "^4.3.0",
     "gatsby-plugin-sass": "^4.3.0",
     "gatsby-plugin-sharp": "^3.7.1",

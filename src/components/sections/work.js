@@ -7,12 +7,13 @@ function Work() {
   const data = useStaticQuery(
     graphql`
       query {
-        projects: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        projects: allMarkdownRemark(sort: { fields: [frontmatter___rank], order: DESC }) {
           totalCount
           edges {
             node {
               id
               frontmatter {
+                rank
                 title
                 cover {
                   childImageSharp {
@@ -44,30 +45,31 @@ function Work() {
         projects && projects.map( ({ node }, i) => {
           const { frontmatter, fields, excerpt } = node;
           const { title, cover, date, role, tools } = frontmatter;
-          const { slug } = fields;
+          // const { slug } = fields;
           const image = getImage(cover);
           const altText = "Project " + title;
 
           return(
           <div className="flex-box" key={i}>
             <GatsbyImage image={image} alt={altText}/>
-            <Link to={slug}>Details
-            </Link>
-            <Themed.h3>
-              {title} <span>— {date}</span>
-            </Themed.h3>
-            <Themed.p>Role: {role}</Themed.p>
-            {tools.length && (
-              <>
-                <Themed.p>Tools:</Themed.p>
-                <ul>
-                  {tools.map((tool, i) => (
-                    <li key={i}>{tool}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-            <Themed.p>{excerpt}</Themed.p>
+            {/* <Link to={slug}>Details</Link> */}
+            <div className="overlay">
+              <div className="overlay-text">
+                <p className="title">{title}</p>
+                <p>{date}</p>
+                <p>Role: {role}</p>
+                {tools.length && (
+                <>
+                  <ul>
+                  Tools: {tools.map((tool, i) => (
+                      <li key={i}>{tool}</li>
+                    ))}
+                  </ul>
+                </>
+                )}
+                <p>{excerpt} More details coming soon!</p>
+              </div>
+            </div>
           </div>
         );
         })

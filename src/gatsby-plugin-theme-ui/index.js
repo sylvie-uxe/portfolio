@@ -17,12 +17,16 @@ const theme = {
   },
   colors: {
     text: '#0c1219',
+    alphaBackground: '#0c1219cc',
+    alphaText: '#fefefe',
     background: '#fefefe',
     primary: '#055BA6',
     accent: '#eb4f83',
     modes: {
       dark: {
         text: '#fefefe',
+        alphaBackground: '#0c1219aa',
+        alphaText: '#fefefe',
         background: '#0c1219',
         primary: '#33383f',
         accent: '#eb4f83',
