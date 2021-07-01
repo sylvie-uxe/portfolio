@@ -1,6 +1,6 @@
 ---
 rank: 6
-title: "6D"
+title: "Working Title"
 date: "April 2021 - Current"
 cover: "./cover.jpg"
 role: "UX Designer"
