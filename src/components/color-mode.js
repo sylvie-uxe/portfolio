@@ -1,6 +1,7 @@
 import { Button, useColorMode } from "theme-ui";
 import React, { createRef, useEffect } from "react";
 import lottie from "lottie-web";
+import { blurAfterClick } from "../utils/dom";
 
 import animationData from "../animations/dark-mode-switcher.json";
 
@@ -39,7 +40,7 @@ function ColorMode() {
       } else {
         goDark();
       }
-      container.blur();
+      blurAfterClick(container);
     }
 
     animation.setSpeed(2);
@@ -54,9 +55,10 @@ function ColorMode() {
 
   return (
     <Button
+      id="colorSwitch"
+      className="icon-button"
       variant="ninja"
       ref={animationContainer}
-      id="colorSwitch"
       aria-label="Dark/light mode switch"
     ></Button>
   );

@@ -20,7 +20,7 @@ const theme = {
     alphaBackground: '#0c1219cc',
     alphaText: '#fefefe',
     background: '#fefefe',
-    primary: '#055BA6',
+    primary: '#0788d9',
     accent: '#eb4f83',
     modes: {
       dark: {
@@ -28,7 +28,7 @@ const theme = {
         alphaBackground: '#0c1219aa',
         alphaText: '#fefefe',
         background: '#0c1219',
-        primary: '#33383f',
+        primary: '#0788d9',
         accent: '#eb4f83',
       },
     },
@@ -36,6 +36,10 @@ const theme = {
   buttons: {
     ninja: {
       color: 'background',
+      bg: 'background',
+    },
+    clickme: {
+      color: 'primary',
       bg: 'background',
     },
   },

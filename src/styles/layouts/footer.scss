@@ -1,0 +1,104 @@
+footer {
+    max-width: $max-width-lg;
+    margin: 0 auto;
+    padding: 8px;
+    position: sticky;
+    bottom: 0;
+
+    .hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s, visibility 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+
+    a, a:hover, a:active, a:visited {
+        color: var(--theme-ui-colors-primary);
+    }
+
+    a:focus {
+        outline: 3px dashed var(--theme-ui-colors-accent);
+        outline-offset: 6px;
+    }
+
+    .tooltip {
+        visibility: visible;
+        top: -40px;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        position: absolute;
+        font-size: small;
+        right: 30px;
+        background: var(--theme-ui-colors-background);
+    }
+
+    .footer-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--theme-ui-colors-background);
+        min-height: 100px;
+        z-index: 9998;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+
+    .footer-menu {
+        position: absolute;
+        bottom: 16px;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        vertical-align: middle;
+    }
+
+    p {
+        font-size: small;
+        display: inline-block;
+        max-width: 80vw;
+        position: absolute;
+        bottom: 0;
+        left: 8px;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+
+    .hide-on-mobile ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+
+        li:not(.hidden) {
+            color: var(--theme-ui-colors-primary);
+            display: inline-block;
+            margin: 0 24px 0 0;
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s, opacity 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        }
+    }
+
+    .show-on-mobile ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        text-align: center;
+
+        li:not(.hidden) {
+            color: var(--theme-ui-colors-primary);
+            margin: 16px 0;
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s, opacity 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        }
+    }
+
+}

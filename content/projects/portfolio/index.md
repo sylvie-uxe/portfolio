@@ -3,7 +3,7 @@ rank: 5
 title: "My portfolio"
 date: "July 2021"
 role: "UX/UI designer, Front-End developer"
-cover: "./cover.jpg"
+cover: "./cover.png"
 tools:
     - Adobe Comp/Fresco/Illustrator/XD
     - React
@@ -11,8 +11,4 @@ tools:
     - Sass
 ---
 
-Pandas are really sweet.
-
-Here's a video of a panda eating sweets.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>
+Personal project - This portfolio, designed with the Adobe Creative Cloud Suite and built in React with Gatsby.

@@ -2,7 +2,7 @@
 rank: 3
 title: "Covivre"
 date: "October 2020 - November 2020"
-cover: "./cover.jpg"
+cover: "./cover.png"
 role: "UX Designer"
 tools:
     - Adobe XD
@@ -10,8 +10,4 @@ tools:
     - Zeplin
 ---
 
-Pandas are really sweet.
-
-Here's a video of a panda eating sweets.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>
+A mobile app that keeps you and your loved ones safe from Covid, using only Bluetooth for users' privacy and anonymity.

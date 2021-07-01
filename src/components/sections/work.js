@@ -1,5 +1,5 @@
 import React from "react";
-import {useStaticQuery, graphql, Link} from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 import { Themed } from 'theme-ui';
 
@@ -39,11 +39,12 @@ function Work() {
 
   return (
     <section id="work">
+      <div className="hide-on-mobile spacer large"></div>
       <Themed.h2>Work</Themed.h2>
       <div className="flex-container">
       {
         projects && projects.map( ({ node }, i) => {
-          const { frontmatter, fields, excerpt } = node;
+          const { frontmatter, excerpt } = node;
           const { title, cover, date, role, tools } = frontmatter;
           // const { slug } = fields;
           const image = getImage(cover);
@@ -51,9 +52,10 @@ function Work() {
 
           return(
           <div className="flex-box" key={i}>
+            <p className="title show-on-mobile">{title}</p>
             <GatsbyImage image={image} alt={altText}/>
             {/* <Link to={slug}>Details</Link> */}
-            <div className="overlay">
+            <div className="overlay hide-on-mobile">
               <div className="overlay-text">
                 <p className="title">{title}</p>
                 <p>{date}</p>
@@ -69,6 +71,21 @@ function Work() {
                 )}
                 <p>{excerpt} More details coming soon!</p>
               </div>
+            </div>
+            <div className="show-on-mobile">
+              <p>{date}</p>
+              <p>Role: {role}</p>
+              {tools.length && (
+                <>
+                  <p>Tools:</p>
+                  <ul>{tools.map((tool, i) => (
+                      <li key={i}>{tool}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              <p>{excerpt} More details coming soon!</p>
+              <div className="spacer small"></div>
             </div>
           </div>
         );

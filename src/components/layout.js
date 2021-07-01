@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import Seo from "./seo";
 import Header from "./header";
 import Footer from "./footer";
-import { Themed } from 'theme-ui';
 
 function Layout({ children }) {
   const { site } = useStaticQuery(
@@ -11,7 +10,6 @@ function Layout({ children }) {
       query {
         site {
           siteMetadata {
-            title
             menuLinks {
               name
               link
@@ -30,7 +28,7 @@ function Layout({ children }) {
       <Seo/>
       <Header menuLinks={site.siteMetadata.menuLinks}/>
       <main id="primary">{children}</main>
-      <Footer siteTitle={site.siteMetadata.title}/>
+      <Footer/>
     </>
   );
 }

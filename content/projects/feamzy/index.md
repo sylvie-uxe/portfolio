@@ -2,8 +2,8 @@
 rank: 4
 title: "feamzy"
 date: "January 2021 - Current"
-cover: "./cover.jpg"
-role: "UX Engineer"
+cover: "./cover.png"
+role: "UX Designer, Front-End Developer"
 tools:
     - Adobe XD
     - Angular
@@ -13,6 +13,4 @@ tools:
     - RxJS
 ---
 
-Do Pandas eat bananas? Check out this short video that shows that yes! pandas do seem to really enjoy bananas!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4SZl1r2O_bY" frameborder="0" allowfullscreen></iframe>
+A social app for parents, designed with Adobe XD and built with Angular.

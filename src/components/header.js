@@ -1,13 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "gatsby";
-import setSiblingActive from "../utils/dom";
+import { setSiblingActive, blurAfterClick } from "../utils/dom";
+import reload from "../utils/nav";
 import ColorMode from "./color-mode";
 import { StaticImage }  from "gatsby-plugin-image";
+import { Button } from "theme-ui";
 
 function Header({menuLinks}) {
-  function handleClickedLogo(e) {
-    window.location.reload();
-  }
+  const [isMenuOpen, setMenuState] = useState(false);
 
   function handleClickedLink(e) {
     const currentElement = e.currentTarget;
@@ -15,11 +15,17 @@ function Header({menuLinks}) {
     if (parentElement) {
       setSiblingActive(parentElement, "active");
     }
+    setMenuState(!isMenuOpen);
+  }
+
+  function handleClickedMenu(e) {
+    blurAfterClick(e.currentTarget);
+    setMenuState(!isMenuOpen);
   }
 
   return (
     <header>
-      <Link id="logo" to="/" onClick={handleClickedLogo} aria-label="Home">
+      <Link id="logo" to="/" onClick={reload} aria-label="Home">
         <StaticImage
           src="../../static/logo.png"
           alt="Logo"
@@ -27,7 +33,33 @@ function Header({menuLinks}) {
           width={60}
           aria-hidden="true"/>
       </Link>
-      <ul>
+      <div className="show-on-mobile">
+        <ColorMode />
+        { isMenuOpen ?
+        <Button style={{visibility: "hidden"}} id="menuToggle" className="icon-button" variant="clickme" onClick={handleClickedMenu}>
+          <span class="material-icons-round large">menu</span>
+        </Button> :
+        <Button id="menuToggle" className="icon-button" variant="clickme" onClick={handleClickedMenu}>
+          <span class="material-icons-round large">menu</span>
+        </Button>}
+      </div>
+        { isMenuOpen ?
+        <aside id="mobile-menu" className="show-on-mobile">
+          <Button id="menuToggle" className="icon-button" variant="clickme" onClick={handleClickedMenu}>
+            <span class="material-icons-round large">close</span>
+          </Button>
+          <ul>
+            {menuLinks.map(props => (
+            <li key={props.name}>
+              <a href={props.link} className="nav" onClick={handleClickedLink}>
+                {props.name}
+              </a>
+            </li>
+            ))}
+          </ul>
+        </aside>
+        : null }
+      <ul className="hide-on-mobile">
         {menuLinks.map(props => (
           <li key={props.name}>
             <a href={props.link} className="nav" onClick={handleClickedLink}>

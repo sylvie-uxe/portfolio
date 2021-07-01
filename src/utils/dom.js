@@ -22,4 +22,8 @@ function setSiblingActive(e, className) {
     e.classList.add(className);
 }
 
-export default setSiblingActive;
+function blurAfterClick(e) {
+    e.blur();
+  }
+
+export { getSiblings, setSiblingActive, blurAfterClick };
