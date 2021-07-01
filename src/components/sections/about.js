@@ -4,7 +4,7 @@ import { Themed } from 'theme-ui';
 function About() {
     return (
         <section id="about">
-            <div className="hide-on-mobile spacer large"></div>
+            <div className="spacer large"></div>
             <Themed.h2>About</Themed.h2>
             <Themed.p>Coming soon!</Themed.p>
         </section>

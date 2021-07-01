@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "gatsby";
 import { setSiblingActive, blurAfterClick } from "../utils/dom";
-import reload from "../utils/nav";
+// import reload from "../utils/nav";
 import ColorMode from "./color-mode";
 import { StaticImage }  from "gatsby-plugin-image";
 import { Button } from "theme-ui";
@@ -23,9 +23,13 @@ function Header({menuLinks}) {
     setMenuState(!isMenuOpen);
   }
 
+  function handleClick(e) {
+    blurAfterClick(e.currentTarget);
+  }
+
   return (
     <header>
-      <Link id="logo" to="/" onClick={reload} aria-label="Home">
+      <Link id="logo" to="/" onClick={handleClick} aria-label="Home">
         <StaticImage
           src="../../static/logo.png"
           alt="Logo"

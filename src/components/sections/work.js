@@ -39,7 +39,7 @@ function Work() {
 
   return (
     <section id="work">
-      <div className="hide-on-mobile spacer large"></div>
+      <div className="spacer large"></div>
       <Themed.h2>Work</Themed.h2>
       <div className="flex-container">
       {

@@ -1,7 +1,19 @@
-.spacer.large {
-    height: 120px;
+@media (min-width: 768px) {
+    .spacer.large {
+        height: 120px;
+    }
+
+    .spacer.small {
+        height: 40px;
+    }
 }
 
-.spacer.small {
-    height: 40px;
+@media (max-width: 767px) {
+    .spacer.large {
+        height: 80px;
+    }
+
+    .spacer.small {
+        height: 20px;
+    }
 }

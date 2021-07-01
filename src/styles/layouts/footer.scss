@@ -31,6 +31,10 @@ footer {
         background: var(--theme-ui-colors-background);
     }
 
+    button#info {
+        border-radius: 50%;
+    }
+
     .footer-bg {
         position: absolute;
         bottom: 0;
@@ -86,7 +90,7 @@ footer {
     .show-on-mobile ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding-left: 16px;
         position: absolute;
         bottom: 8px;
         right: 8px;
@@ -94,7 +98,7 @@ footer {
 
         li:not(.hidden) {
             color: var(--theme-ui-colors-primary);
-            margin: 16px 0;
+            margin: 24px 0;
             visibility: visible;
             opacity: 1;
             transition: visibility 0s, opacity 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
