@@ -54,7 +54,7 @@ function Footer() {
                     </a>
                 </li>
                 <li className={hidden ? "hidden" : null}>
-                    {copied ? <span className="tooltip">Address copied!</span> : null}
+                    {copied ? <span className="tooltip">Email address copied!</span> : null}
                     <CopyToClipboard text="sylvie.uxe@gmail.com"
                         onCopy={copyEmailAddress}>
                         <Button className="icon-button"
@@ -100,7 +100,7 @@ function Footer() {
                     </a>
                 </li>
                 <li className={hidden ? "hidden" : null}>
-                    {copied ? <span className="tooltip">Address copied!</span> : null}
+                    {copied ? <span className="tooltip">Email address copied!</span> : null}
                     <CopyToClipboard text="sylvie.uxe@gmail.com"
                         onCopy={copyEmailAddress}>
                         <Button className="icon-button"

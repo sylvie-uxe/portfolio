@@ -1,15 +1,15 @@
 import React from "react";
 
-import { Layout, Hero, About, Work, Resume, Contact } from "../components";
+import { Layout, Hero, Work } from "../components";
 
 function Home() {
   return (
     <Layout>
       <Hero/>
-      <About/>
+      {/* <About/> */}
       <Work/>
-      <Resume/>
-      <Contact/>
+      {/* <Resume/>
+      <Contact/> */}
     </Layout>
   );
 }

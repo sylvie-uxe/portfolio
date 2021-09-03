@@ -16,8 +16,10 @@ footer {
     }
 
     a:focus {
-        outline: 3px dashed var(--theme-ui-colors-accent);
-        outline-offset: 6px;
+        color: var(--theme-ui-colors-accent);
+        outline: none;
+        // outline: 3px dashed var(--theme-ui-colors-accent);
+        // outline-offset: 6px;
     }
 
     .tooltip {

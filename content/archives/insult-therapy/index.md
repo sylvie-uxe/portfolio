@@ -12,5 +12,6 @@ tools:
     - RxJS
     - Firebase
     - Firestore
+published: false
 ---
 Personal project - A web app offering a cathartic experience where the users can browse or submit their favorite insults from TV shows.

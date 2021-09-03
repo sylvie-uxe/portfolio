@@ -41,19 +41,19 @@ function Header({menuLinks}) {
         <ColorMode />
         { isMenuOpen ?
         <Button style={{visibility: "hidden"}} id="menuToggle" className="icon-button" variant="clickme" onClick={handleClickedMenu}>
-          <span class="material-icons-round large">menu</span>
+          <span className="material-icons-round large">menu</span>
         </Button> :
         <Button id="menuToggle" className="icon-button" variant="clickme" onClick={handleClickedMenu}>
-          <span class="material-icons-round large">menu</span>
+          <span className="material-icons-round large">menu</span>
         </Button>}
       </div>
         { isMenuOpen ?
         <aside id="mobile-menu" className="show-on-mobile">
           <Button id="menuToggle" className="icon-button" variant="clickme" onClick={handleClickedMenu}>
-            <span class="material-icons-round large">close</span>
+            <span className="material-icons-round large">close</span>
           </Button>
           <ul>
-            {menuLinks.map(props => (
+            {menuLinks && menuLinks.map(props => (
             <li key={props.name}>
               <a href={props.link} className="nav" onClick={handleClickedLink}>
                 {props.name}
@@ -64,7 +64,7 @@ function Header({menuLinks}) {
         </aside>
         : null }
       <ul className="hide-on-mobile">
-        {menuLinks.map(props => (
+        {menuLinks && menuLinks.map(props => (
           <li key={props.name}>
             <a href={props.link} className="nav" onClick={handleClickedLink}>
               {props.name}

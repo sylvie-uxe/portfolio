@@ -6,22 +6,22 @@ module.exports = {
     description: `Sylvie Donatien is a UX Designer and Front-End Developer who designs valuable and enjoyable digital experiences for all and codes in JavaScript, TypeScript, Angular and React to make those experiences come true.`,
     author: `Sylvie Donatien`,
     menuLinks: [
-      {
-        name: `About`,
-        link: `#about`
-      },
+      // {
+      //   name: `About`,
+      //   link: `#about`
+      // },
       {
         name: `Work`,
         link: `#work`
       },
-      {
-        name: `Resume`,
-        link: `#resume`
-      },
-      {
-        name: `Contact`,
-        link: `#contact`
-      }
+      // {
+      //   name: `Resume`,
+      //   link: `#resume`
+      // },
+      // {
+      //   name: `Contact`,
+      //   link: `#contact`
+      // }
     ]
   },
   plugins: [
