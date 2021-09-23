@@ -10,16 +10,6 @@ header {
     align-items: center;
     background-color: var(--theme-ui-colors-background);
 
-    a, a:hover, a:active {
-        color: var(--theme-ui-colors-primary);
-        text-decoration: none;
-    }
-
-    a:focus {
-        outline: none;
-        color: var(--theme-ui-colors-accent);
-    }
-
     li>a {
         color: inherit;
         text-decoration: none;
@@ -27,6 +17,10 @@ header {
 
     li>a:hover, li>a:active, li.active>a {
         color: var(--theme-ui-colors-primary);
+    }
+
+    li.inactive>a {
+        color: var(--theme-ui-colors-text);
     }
 
     li>a:focus {
@@ -48,6 +42,12 @@ header {
             content: "";
             border-bottom: 4px solid var(--theme-ui-colors-primary);
             width: 100%;
+            display: block;
+        }
+
+        li.inactive>a::after {
+            content: "";
+            border-bottom: none;
             display: block;
         }
 

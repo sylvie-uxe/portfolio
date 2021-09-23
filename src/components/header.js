@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import { Link } from "gatsby";
 import { setSiblingActive, blurAfterClick } from "../utils/dom";
-// import reload from "../utils/nav";
+import reload from "../utils/nav";
 import ColorMode from "./color-mode";
 import { StaticImage }  from "gatsby-plugin-image";
 import { Button } from "theme-ui";
+import Pdf from "../../static/Sylvie_Donatien_2021_web.pdf";
 
 function Header({menuLinks}) {
   const [isMenuOpen, setMenuState] = useState(false);
@@ -24,12 +25,17 @@ function Header({menuLinks}) {
   }
 
   function handleClick(e) {
+    const currentElement = e.currentTarget;
+    const parentElement = currentElement.parentElement;
+    if (parentElement) {
+      setSiblingActive(parentElement, "inactive");
+    }
     blurAfterClick(e.currentTarget);
   }
 
   return (
     <header>
-      <Link id="logo" to="/" onClick={handleClick} aria-label="Home">
+      <Link id="logo" to="/" onClick={reload} aria-label="Home">
         <StaticImage
           src="../../static/logo.png"
           alt="Logo"
@@ -55,22 +61,32 @@ function Header({menuLinks}) {
           <ul>
             {menuLinks && menuLinks.map(props => (
             <li key={props.name}>
-              <a href={props.link} className="nav" onClick={handleClickedLink}>
+              <a href={props.link} onClick={handleClickedLink}>
                 {props.name}
               </a>
             </li>
             ))}
+            <li>
+              <a href={Pdf} rel="noreferrer" target="_blank" onClick={handleClickedLink}>
+                Resume
+              </a>
+            </li>
           </ul>
         </aside>
         : null }
       <ul className="hide-on-mobile">
         {menuLinks && menuLinks.map(props => (
           <li key={props.name}>
-            <a href={props.link} className="nav" onClick={handleClickedLink}>
+            <a href={props.link} onClick={handleClickedLink}>
               {props.name}
             </a>
           </li>
         ))}
+        <li>
+          <a href={Pdf} rel="noreferrer" target="_blank" onClick={handleClick}>
+            Resume
+          </a>
+        </li>
         <li>
           <ColorMode />
         </li>
