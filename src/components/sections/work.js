@@ -56,24 +56,39 @@ function Work() {
             return (
               <div className="flex-box" key={i}>
                 <p className="title show-on-mobile">{title}</p>
-                <a href={url}>
-                  <GatsbyImage image={image} alt={altText} />
-                  <div className="overlay hide-on-mobile">
-                    <div className="overlay-text">
-                      <p className="title">{title}</p>
-                      <p>{date}</p>
-                      <p>Role: {role}</p>
-                      <p>{excerpt}</p>
+                {isExternalLink && (
+                  <a href={url} rel="noreferrer" target="_blank">
+                    <GatsbyImage image={image} alt={altText} />
+                    <div className="overlay hide-on-mobile">
+                      <div className="overlay-text">
+                        <p className="title">{title}</p>
+                        <p>{date}</p>
+                        <p>Role: {role}</p>
+                        <p>{excerpt}</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                )}
+                {!isExternalLink && (
+                  <a href={url}>
+                    <GatsbyImage image={image} alt={altText} />
+                    <div className="overlay hide-on-mobile">
+                      <div className="overlay-text">
+                        <p className="title">{title}</p>
+                        <p>{date}</p>
+                        <p>Role: {role}</p>
+                        <p>{excerpt}</p>
+                      </div>
+                    </div>
+                  </a>
+                )}
                 <div className="show-on-mobile">
                   <p>{date}</p>
                   <p>Role: {role}</p>
                   <p>{excerpt}</p>
                   {link && isExternalLink && (
                     <>
-                      <a href={url}>Have a look! <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
+                      <a href={url} rel="noreferrer" target="_blank">Have a look! <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
                     </>
                   )}
                   {link && !isExternalLink && (
@@ -86,6 +101,7 @@ function Work() {
           })
         }
       </div>
+      <div className="spacer large"></div>
     </section>
   );
 }

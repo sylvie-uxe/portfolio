@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { blurAfterClick } from "../utils/dom";
+import { handleClick } from "../utils/dom";
 
 function Footer() {
     const [hidden, setVisibility] = useState(true);
@@ -20,10 +20,6 @@ function Footer() {
         setTimeout(() => {
             setCopyStatus(false)
         }, 1000);
-    }
-
-    function handleClick(e) {
-        blurAfterClick(e.currentTarget);
     }
 
     return(

@@ -24,6 +24,10 @@ function setSiblingActive(e, className) {
 
 function blurAfterClick(e) {
     e.blur();
-  }
+}
 
-export { getSiblings, setSiblingActive, blurAfterClick };
+function handleClick(e) {
+    blurAfterClick(e.currentTarget);
+}
+
+export { getSiblings, setSiblingActive, blurAfterClick, handleClick };

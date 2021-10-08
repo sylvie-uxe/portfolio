@@ -1,8 +1,8 @@
 ---
-rank: 5
+rank: 4
 title: "My portfolio"
 date: "July 2021"
-role: "UX/UI designer, Front-End developer"
+role: "UX Designer, Front-End Developer"
 cover: "./cover.png"
 # tools:
 #     - Adobe Comp/Fresco/Illustrator/XD

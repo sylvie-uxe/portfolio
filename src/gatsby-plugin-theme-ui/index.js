@@ -12,7 +12,7 @@ const theme = {
     bold: 700,
   },
   lineHeights: {
-    body: 1.5,
+    body: 2,
     heading: 1.125,
   },
   colors: {
@@ -69,30 +69,31 @@ const theme = {
     },
     h1: {
       variant: 'text.heading',
-      fontSize: 5,
+      fontSize: 6,
     },
     h2: {
       variant: 'text.heading',
-      fontSize: 4,
+      fontSize: 5,
     },
     h3: {
       variant: 'text.heading',
-      fontSize: 3,
+      fontSize: 4,
     },
     h4: {
       variant: 'text.heading',
-      fontSize: 2,
+      fontSize: 3,
     },
     h5: {
       variant: 'text.heading',
-      fontSize: 1,
+      fontSize: 2,
     },
     h6: {
       variant: 'text.heading',
-      fontSize: 0,
+      fontSize: 1,
     },
     p: {
       variant: 'text.body',
+      fontSize: 2,
     },
     a: {
       color: 'primary',

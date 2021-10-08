@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "gatsby";
+import { Themed } from 'theme-ui';
 import { setSiblingActive, blurAfterClick } from "../utils/dom";
 import reload from "../utils/nav";
 import ColorMode from "./color-mode";
@@ -35,6 +36,9 @@ function Header({menuLinks}) {
 
   return (
     <header>
+      <Themed.a className="skip-to-content-link" href="#primary">
+        Skip to content
+      </Themed.a>
       <Link id="logo" to="/" onClick={reload} aria-label="Home">
         <StaticImage
           src="../../static/logo.png"

@@ -1,5 +1,5 @@
 ---
-rank: 4
+rank: 2
 title: "feamzy"
 date: "January 2021 - Current"
 cover: "./cover.png"
