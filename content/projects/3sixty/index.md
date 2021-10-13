@@ -1,5 +1,5 @@
 ---
-rank: 5
+rank: 4
 title: "3sixty"
 date: "May 2021 - August 2021"
 cover: "./cover.png"

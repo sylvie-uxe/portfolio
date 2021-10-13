@@ -1,13 +1,9 @@
 ---
-rank: 3
+rank: 2
 title: "My Github Graph"
 date: "December 2020 - January 2021"
 cover: "./cover.png"
 role: "Front-End Developer"
-# tools:
-#     - HTML
-#     - CSS
-#     - JavaScript
 link: "https://my-github-graph.web.app/about.html"
 ---
 

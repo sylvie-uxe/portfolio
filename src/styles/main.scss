@@ -153,6 +153,10 @@ main {
         position: relative;
     }
 
+    .flex-box.large {
+        max-width: 600px;
+    }
+
     .flex-box.margin {
         margin-right: 60px;
     }
@@ -208,6 +212,10 @@ main {
         width: 200px;
         border-top: 4px solid var(--theme-ui-colors-secondary);
         content: '';
+    }
+
+    .illustration {
+        text-align: center;
     }
 
 }
