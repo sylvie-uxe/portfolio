@@ -50,7 +50,7 @@ header {
 
         li>a:active::after, li.active>a::after {
             content: "";
-            border-bottom: 3px solid var(--theme-ui-colors-secondary);
+            border-bottom: 3px solid var(--theme-ui-colors-primary);
             width: 100%;
             display: block;
         }

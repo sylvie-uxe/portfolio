@@ -102,6 +102,7 @@ footer {
 
         li:not(.hidden) {
             color: var(--theme-ui-colors-primary);
+            background-color: var(--theme-ui-colors-background);
             margin: 24px 0;
             visibility: visible;
             opacity: 1;

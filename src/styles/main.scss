@@ -165,9 +165,7 @@ main {
         padding-left: 10px;
         border-left: 10px solid var(--theme-ui-colors-secondary);
     }
-}
 
-#project-content {
     a {
         color: var(--theme-ui-colors-primary);
     }
@@ -196,7 +194,7 @@ main {
         font-size: xx-large;
     }
 
-    h2:not(.introduction), h3, p {
+    h2:not(.introduction), h3, p, ul, ol {
         max-width: 640px;
         margin-left: auto;
         margin-right: auto;

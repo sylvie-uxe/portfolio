@@ -57,7 +57,7 @@ function Work() {
               <div className="flex-box" key={i}>
                 <p className="title show-on-mobile">{title}</p>
                 {isExternalLink && (
-                  <a href={url} rel="noreferrer" target="_blank">
+                  <a href={url} rel="noreferrer" target="_blank" aria-label={altText}>
                     <GatsbyImage image={image} alt={altText} />
                     <div className="overlay hide-on-mobile">
                       <div className="overlay-text">
@@ -70,7 +70,7 @@ function Work() {
                   </a>
                 )}
                 {!isExternalLink && (
-                  <a href={url}>
+                  <a href={url} aria-label={altText}>
                     <GatsbyImage image={image} alt={altText} />
                     <div className="overlay hide-on-mobile">
                       <div className="overlay-text">

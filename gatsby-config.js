@@ -13,15 +13,7 @@ module.exports = {
       {
         name: `Work`,
         link: `#work`
-      },
-      // {
-      //   name: `Resume`,
-      //   link: `#resume`
-      // },
-      // {
-      //   name: `Contact`,
-      //   link: `#contact`
-      // }
+      }
     ]
   },
   plugins: [
@@ -59,8 +51,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Sylvie Donatien`,
+        short_name: `Sylvie Donatien`,
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
@@ -68,6 +60,7 @@ module.exports = {
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
         icon: `static/logo.png`, // This path is relative to the root of the site.
+        prefer_related_applications: true
       },
     },
   ],

@@ -72,12 +72,11 @@ export default function Covivre() {
             </div>
             <div className="spacer large"></div>
             <h2>Problem</h2>
-            <p>After the launch of the app in September 2021, the app analytics showed that:
+            <p>After the launch of the app in September 2021, the app analytics showed that:</p>
                 <ul>
                     <li>the number of users who signed up increased then reached a plateau after a few months</li>
                     <li>only a small percentage of the users was active on the app</li>
                 </ul>
-            </p>
             <p>The whole challenge for us was to increase the number of users who signed up but also to have them use the app on a daily basis.</p>
             <div className="spacer small"></div>
             <h3>Hopping into a user's shoes</h3>
@@ -118,7 +117,7 @@ export default function Covivre() {
             </div>
             <div className="spacer small"></div>
             <h3>Pain points</h3>
-            <p>Multiple pain points were identified during the research phase:
+            <p>Multiple pain points were identified during the research phase:</p>
                 <ul>
                     <li>The signup process requires too many steps</li>
                     <li>The users have to do too many manual tasks before they can use the app</li>
@@ -128,7 +127,6 @@ export default function Covivre() {
                     <li>The screens transition in inconsistent directions</li>
                     <li>The users can share a link to download the app with other parents but cannot directly invite other parents to join a classroom they created in the app</li>
                 </ul>
-            </p>
             <div className="spacer large"></div>
             <h2>Design</h2>
             <p>During the ideation, prototyping and testing phases, I worked on solving the identified problems for the users. This was achieved by applying UX design patterns but also thanks to competitive audits.</p>
@@ -139,6 +137,8 @@ export default function Covivre() {
             <div className="illustration">
                 <video controls style={{ maxWidth: `240px` }}>
                   <source src={signupProto} type="video/mp4" />
+                  <track kind="captions"/>
+                  Unfortunately your browser does not support videos.
                 </video>
                 <p className="caption">Signup made easy</p>
               </div>
@@ -149,6 +149,8 @@ export default function Covivre() {
             <div className="illustration">
                 <video controls style={{ maxWidth: `240px` }}>
                   <source src={onboardingProto} type="video/mp4" />
+                  <track kind="captions"/>
+                  Unfortunately your browser does not support videos.
                 </video>
                 <p className="caption">Onboarding flow at first launch</p>
             </div>
@@ -228,20 +230,21 @@ export default function Covivre() {
             </div>
             <div className="spacer small"></div>
             <h3>Design consistency</h3>
-            <p><strong>Pain points</strong><br/><ul><li>Design is not consistent throughout the app</li><li>The screens transition in inconsistent directions</li></ul></p>
-            <p><strong>Solution</strong><br/>The inconsistencies in the design and transitions between screens were fixed in Adobe XD:
+            <p><strong>Pain points</strong></p><ul><li>Design is not consistent throughout the app</li><li>The screens transition in inconsistent directions</li></ul>
+            <p><strong>Solution</strong><br/>The inconsistencies in the design and transitions between screens were fixed in Adobe XD:</p>
                 <ul>
                     <li>by creating a design system: colors, character styles, iconography, graphics and even layouts created as components were reused throughout the app</li>
                     <li>by creating a high-fidelity prototype and setting the appropriate transitions between screens</li>
                 </ul>
-            </p>
             <div className="spacer small"></div>
             <h3>On a social app, the more the merrier!</h3>
             <p><strong>Pain point</strong><br/>The users can share a link to download the app with other parents but cannot directly invite other parents to join a classroom they created in the app.</p>
-            <p><strong>Solution</strong><br/>Other parents can now join and use the app with an invitation code:<ul><li>A user can create a classroom for their children and share the classroom code with other parents.</li><li>A user can also create a family (composed of other people not yet users of the app and children) and share a family code with those people who can then join directly.</li></ul></p>
+            <p><strong>Solution</strong><br/>Other parents can now join and use the app with an invitation code:</p><ul><li>A user can create a classroom for their children and share the classroom code with other parents.</li><li>A user can also create a family (composed of other people not yet users of the app and children) and share a family code with those people who can then join directly.</li></ul>
             <div className="illustration">
                 <video controls style={{ maxWidth: `240px` }}>
                   <source src={invitationProto} type="video/mp4" />
+                  <track kind="captions"/>
+                  Unfortunately your browser does not support videos.
                 </video>
                 <p className="caption">Invite a parent to join the family</p>
             </div>

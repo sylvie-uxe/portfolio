@@ -8,8 +8,6 @@ function Home() {
       <Hero/>
       {/* <About/> */}
       <Work/>
-      {/* <Resume/>
-      <Contact/> */}
     </Layout>
   );
 }

@@ -69,109 +69,100 @@ export default function Covivre() {
             <div className="spacer small"></div>
             <h2>Design</h2>
             <p>The chosen solution is purely based on Bluetooth with no location tracking and no exchange of personal information. Also, it relies exclusively on the fact that the user would update their status in the app should they test positive.</p>
-            <p>Main features include:
-              <ul>
-                <li>Health monitoring</li>
-                <li>Best practices checklist</li>
-                <li>Exposure level</li>
-                <li>Blog</li>
-              </ul>
-            </p>
+            <p>Main features include:</p>
+            <ul>
+              <li>Health monitoring</li>
+              <li>Best practices checklist</li>
+              <li>Exposure level</li>
+              <li>Blog</li>
+            </ul>
             <p>Some feedback gathered on the prototype showed that an onboarding process was needed. An informative section with lenghty text was also replaced with a chatbot whose sequential nature was way more helpful to the users. They felt more guided and they could better process the information because it was split into smaller chunks.</p>
             <div className="spacer small"></div>
             <h3>Health monitoring</h3>
             <p>For the users to always be aware of their health and of their potential symptoms, day after day.</p>
             <div className="flex-container">
               <div className="flex-box">
-                <figure>
                   <StaticImage
                     src="../../../static/covivre/covivre_mockups_iam1.png"
                     alt="Smartphone mockup of a health monitoring screen"
                     placeholder="blurred"
                     aria-hidden="true"/>
-                  <figcaption className="caption">Users can log how they feel, day after day</figcaption>
-                </figure>
+                  <p className="caption">Users can log how they feel, day after day</p>
               </div>
               <div className="flex-box">
-                <figure>
                   <StaticImage
                     src="../../../static/covivre/covivre_mockups_iam2.png"
                     alt="Smartphone mockup of a health monitoring screen"
                     placeholder="blurred"
                     aria-hidden="true"/>
-                  <figcaption className="caption">The feature helps increase awareness of current health</figcaption>
-                </figure>
+                  <p className="caption">The feature helps increase awareness of current health</p>
               </div>
               <div className="flex-box">
-                <figure>
                   <StaticImage
                     src="../../../static/covivre/covivre_mockups_iam3.png"
                     alt="Smartphone mockup of a health monitoring screen"
                     placeholder="blurred"
                     aria-hidden="true"/>
-                  <figcaption className="caption">Users can check their symptoms and take an informed decision about staying home or not</figcaption>
-                </figure>
-              </div>
+                  <p className="caption">Users can check their symptoms and take an informed decision about staying home or not</p>
+                </div>
             </div>
             <div className="spacer small"></div>
             <h3>Best practices checklist</h3>
-            <p>A checklist of best practices for fighting the virus with actions that save lives (social distancing, mask wearing, etc).
-            <figure>
+            <p>A checklist of best practices for fighting the virus with actions that save lives (social distancing, mask wearing, etc).</p>
+            <div className="illustration">
               <StaticImage
                   src="../../../static/covivre/covivre_mockups_fight1.png"
                   alt="Smartphone mockup of the best practices checklist screen"
                   placeholder="blurred"
                   width={280}
                   aria-hidden="true"/>
-              <figcaption className="caption">Users are reminded of the best practices that save lives</figcaption>
-            </figure>
-            </p>
+              <p className="caption">Users are reminded of the best practices that save lives</p>
+              </div>
             <div className="spacer small"></div>
             <h3>Exposure level</h3>
-            <p>For assessing one's recent or current exposure to COVID-19.
-            <figure>
+            <p>For assessing one's recent or current exposure to COVID-19.</p>
+            <div className="illustration">
               <StaticImage
                   src="../../../static/covivre/covivre_mockups_staysafe.png"
                   alt="Smartphone mockup of the stay safe screen"
                   placeholder="blurred"
                   width={280}
                   aria-hidden="true"/>
-              <figcaption className="caption">Apps installed on users' phones rely on Bluetooth to exchange information anonymously and determine exposure</figcaption>
-            </figure>
-            </p>
+              <p className="caption">Apps installed on users' phones rely on Bluetooth to exchange information anonymously and determine exposure</p>
+            </div>
             <div className="spacer small"></div>
             <h3>Blog</h3>
-            <p>For checking the local or more distant news and staying informed.
-            <figure>
+            <p>For checking the local or more distant news and staying informed.</p>
+            <div className="illustration">
               <StaticImage
                   src="../../../static/covivre/covivre_mockups_blog.png"
                   alt="Smartphone mockup of the blog screen"
                   placeholder="blurred"
                   width={280}
                   aria-hidden="true"/>
-              <figcaption className="caption">Users can filter news or articles by location and bookmark interesting articles</figcaption>
-            </figure>
-            </p>
+              <p className="caption">Users can filter news or articles by location and bookmark interesting articles</p>
+              </div>
             <div className="spacer small"></div>
             <h2>Outcome</h2>
             <p>
-              The app didn't end up being developed but a version of a high-fidelity prototype was published in Adobe XD, along with the assets and specifications in Zeplin.
-              <figure>
+              The app didn't end up being developed but a version of a high-fidelity prototype was published in Adobe XD, along with the assets and specifications in Zeplin.</p>
+              <div className="illustration">
                 <StaticImage
                     src="../../../static/covivre/covivre_hifi-prototype.png"
                     alt="Screenshot of the Adobe XD artboards connected to each other into a prototype"
                     placeholder="blurred"
                     width={640}
                     aria-hidden="true"/>
-                <figcaption className="caption">Mockups and high-fidelity prototype in Adobe XD</figcaption>
-              </figure>
-            </p>
+                <p className="caption">Mockups and high-fidelity prototype in Adobe XD</p>
+                </div>
             <div className="spacer large"></div>
             <p>Here are some recordings of a user going through the main features of the app.</p>
             <div className="flex-container">
               <div className="flex-box">
                 <video controls style={{ maxWidth: `240px` }}>
                   <source src={firstLaunchProto} type="video/mp4" />
+                  <track kind="captions"/>
+                  Unfortunately your browser does not support videos but you can have a look at the high-fidelity prototype mentioned above.
                 </video>
                 <p className="caption">Onboarding on First Launch</p>
                 <div className="spacer large"></div>
@@ -179,6 +170,8 @@ export default function Covivre() {
               <div className="flex-box">
                 <video controls style={{ maxWidth: `240px` }}>
                   <source src={iamProto} type="video/mp4" />
+                  <track kind="captions"/>
+                  Unfortunately your browser does not support videos but you can have a look at the high-fidelity prototype mentioned above.
                 </video>
                 <p className="caption">Health Monitoring</p>
                 <div className="spacer large"></div>
@@ -186,6 +179,8 @@ export default function Covivre() {
               <div className="flex-box">
                 <video controls style={{ maxWidth: `240px` }}>
                   <source src={fightProto} type="video/mp4" />
+                  <track kind="captions"/>
+                  Unfortunately your browser does not support videos but you can have a look at the high-fidelity prototype mentioned above.
                 </video>
                 <p className="caption">Best Practices</p>
                 <div className="spacer large"></div>
@@ -193,6 +188,8 @@ export default function Covivre() {
               <div className="flex-box">
                 <video controls style={{ maxWidth: `240px` }}>
                   <source src={staySafeProto} type="video/mp4" />
+                  <track kind="captions"/>
+                  Unfortunately your browser does not support videos but you can have a look at the high-fidelity prototype mentioned above.
                 </video>
                 <p className="caption">Exposure to COVID-19</p>
                 <div className="spacer large"></div>

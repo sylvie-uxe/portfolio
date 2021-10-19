@@ -1,53 +1,35 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import {handleClick} from "../utils/dom";
+import { StaticImage }  from "gatsby-plugin-image";
+import {Seo, Footer} from "../components";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
-
-// markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
+    <>
+    <Seo />
+    <header>
+      <Link id="logo" to="/" onClick={handleClick} aria-label="Home">
+        <StaticImage
+          src="../../static/logo.png"
+          alt="Logo"
+          placeholder="blurred"
+          width={60}
+          aria-hidden="true"/>
+      </Link>
+    </header>
+    <main>
+      <h1>Page not found</h1>
+      <p>
+        Sorry I couldn’t find what you were looking for.
         <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        You can <Link to="/">go home</Link> and try again. Fingers crossed!
       </p>
+      <div className="spacer large"></div>
     </main>
+    <Footer />
+    </>
   );
 };
 

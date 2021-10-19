@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Button, Themed } from 'theme-ui';
 import { StaticImage } from 'gatsby-plugin-image';
 import { handleClick } from '../../utils/dom';
 import pathToAudio from '../../../static/thatsmyname.mp3';
+import pathToCaptions from 'file-loader!../../../static/thatsmyname.vtt';
 
 function Hero() {
-    let audioEl = new Audio(pathToAudio);
+    const audioEl = useRef( { current: null });
 
     function play(e) {
-        audioEl.play().catch(error => console.log(error));
+        audioEl.current.src = pathToAudio;
+        audioEl.current.play().catch(error => console.log(error));
         handleClick(e);
     }
 
@@ -25,6 +27,9 @@ function Hero() {
                         onClick={play}>
                         <span className="material-icons-round">volume_up</span>
                     </Button>
+                    <audio ref={audioEl}>
+                        <track default kind="captions" src={pathToCaptions}/>
+                    </audio>
                     </Themed.p>
                 </div>
                 <div className="flex-box">

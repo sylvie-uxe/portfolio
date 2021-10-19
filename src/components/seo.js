@@ -11,6 +11,9 @@ function Seo() {
       title={title}
       meta={[
         {
+          charset: `utf-8`
+        },
+        {
           name: `description`,
           content: description
         },
