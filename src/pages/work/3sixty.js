@@ -22,7 +22,7 @@ export default function ThreeSixty() {
       setTimeout(() => {
           setCopyStatus(false)
       }, 1000);
-  }
+    }
 
     return (
       <>

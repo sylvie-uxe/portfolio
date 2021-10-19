@@ -26,6 +26,10 @@ main {
     margin-left: 16px;
 }
 
+.align-right {
+    text-align: right;
+}
+
 .skip-to-content-link {
     left: 0;
     top: 0;
@@ -112,6 +116,30 @@ main {
 
     a:focus img {
         border: 6px solid var(--theme-ui-colors-accent);
+    }
+
+    .tooltip {
+        font-size: small;
+        color: var(--theme-ui-colors-primary);
+    }
+}
+
+#contact {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+
+    a {
+        color: var(--theme-ui-colors-primary);
+    }
+
+    a:hover, a:active {
+        color: var(--theme-ui-colors-accent);
+    }
+
+    a:focus {
+        outline: none;
+        color: var(--theme-ui-colors-accent);
     }
 }
 

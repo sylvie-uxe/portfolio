@@ -15,6 +15,7 @@
 }
 
 .outlined.primary {
+    font: inherit;
     text-decoration: none;
     color: var(--theme-ui-colors-primary) !important;
     background-color: var(--theme-ui-colors-background) !important;
@@ -22,7 +23,6 @@
     padding: 16px 32px !important;
     border-radius: 10px !important;
     cursor: pointer;
-    text-transform: uppercase;
 }
 
 .outlined.primary:hover {

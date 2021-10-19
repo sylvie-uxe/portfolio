@@ -1,13 +1,13 @@
 import React from "react";
-
-import { Layout, Hero, Work } from "../components";
+import { Layout, Hero, Work, About, Contact } from "../components";
 
 function Home() {
   return (
     <Layout>
       <Hero/>
-      {/* <About/> */}
       <Work/>
+      {/* <About/> */}
+      <Contact/>
     </Layout>
   );
 }

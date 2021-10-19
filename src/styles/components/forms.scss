@@ -1,0 +1,40 @@
+form {
+    border: 0.5px solid var(--theme-ui-colors-secondary);
+    border-radius: 5px;
+    padding: 16px;
+    max-width: 600px;
+    text-align: left;
+
+    .required {
+        color: var(--theme-ui-colors-accent);
+    }
+}
+
+input, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--theme-ui-colors-primary);
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+input {
+    width: 300px;
+    height: 48px;
+}
+
+.hidden {
+    display: none;
+}
