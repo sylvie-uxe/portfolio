@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { StaticImage } from 'gatsby-plugin-image';
-import { Seo, Footer } from "../../components";
-import { Link } from "gatsby";
+import { Seo, WorkHeader, Footer } from "../../components";
 import { handleClick } from "../../utils/dom";
-import ColorMode from "../../components/color-mode";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Button } from "theme-ui";
 
@@ -27,12 +25,7 @@ export default function ThreeSixty() {
     return (
       <>
         <Seo/>
-        <header>
-          <Link to="/#work" onClick={handleClick} aria-label="Go back to work">
-            <FontAwesomeIcon icon={faArrowCircleLeft} size="2x"/>
-          </Link>
-          <ColorMode />
-        </header>
+        <WorkHeader/>
         <main>
           <StaticImage
             src="../../../static/3sixty_hero.png"

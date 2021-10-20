@@ -1,11 +1,6 @@
 import React from "react";
 import { StaticImage } from 'gatsby-plugin-image';
-import { Seo, Footer } from "../../components";
-import { Link } from "gatsby";
-import { handleClick } from "../../utils/dom";
-import ColorMode from "../../components/color-mode";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import { Seo, WorkHeader, Footer } from "../../components";
 import fightProto from '../../../static/covivre/covivre_fight.mp4';
 import firstLaunchProto from '../../../static/covivre/covivre_first-launch.mp4';
 import iamProto from '../../../static/covivre/covivre_iam.mp4';
@@ -15,12 +10,7 @@ export default function Covivre() {
     return (
       <>
         <Seo/>
-        <header>
-          <Link to="/#work" onClick={handleClick} aria-label="Go back to work">
-            <FontAwesomeIcon className="icon-button" icon={faArrowCircleLeft} size="2x"/>
-          </Link>
-          <ColorMode />
-        </header>
+        <WorkHeader />
         <main>
           <StaticImage
             src="../../../static/covivre/covivre_hero.png"

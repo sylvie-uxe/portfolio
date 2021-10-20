@@ -10,27 +10,13 @@ header {
     align-items: center;
     background-color: var(--theme-ui-colors-background);
 
-    a, a:hover, a:active {
-        color: var(--theme-ui-colors-primary);
-        text-decoration: none;
-    }
-
-    a:focus {
-        outline: none;
-        color: var(--theme-ui-colors-accent);
-    }
-
     li>a {
         color: inherit;
         text-decoration: none;
     }
 
-    li>a:hover, li>a:active, li.active>a {
+    li>a:hover, li>a:active {
         color: var(--theme-ui-colors-primary);
-    }
-
-    li.inactive>a {
-        color: var(--theme-ui-colors-text);
     }
 
     li>a:focus {
@@ -48,16 +34,10 @@ header {
             margin: 0 1.5rem;
         }
 
-        li>a:active::after, li.active>a::after {
+        li>a:hover::after, li>a:active::after {
             content: "";
-            border-bottom: 3px solid var(--theme-ui-colors-primary);
+            border-bottom: 4px solid var(--theme-ui-colors-primary);
             width: 100%;
-            display: block;
-        }
-
-        li.inactive>a::after {
-            content: "";
-            border-bottom: none;
             display: block;
         }
 

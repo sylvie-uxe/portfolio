@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { Link } from "gatsby";
 import { Themed } from 'theme-ui';
-import { setSiblingActive, blurAfterClick } from "../utils/dom";
-import reload from "../utils/nav";
+import { blurAfterClick } from "../utils/dom";
+import { handleClick } from "../utils/dom";
 import ColorMode from "./color-mode";
 import { StaticImage }  from "gatsby-plugin-image";
 import { Button } from "theme-ui";
@@ -11,27 +11,9 @@ import Pdf from "../../static/Sylvie_Donatien_2021_web.pdf";
 function Header({menuLinks}) {
   const [isMenuOpen, setMenuState] = useState(false);
 
-  function handleClickedLink(e) {
-    const currentElement = e.currentTarget;
-    const parentElement = currentElement.parentElement;
-    if (parentElement) {
-      setSiblingActive(parentElement, "active");
-    }
-    setMenuState(!isMenuOpen);
-  }
-
   function handleClickedMenu(e) {
     blurAfterClick(e.currentTarget);
     setMenuState(!isMenuOpen);
-  }
-
-  function handleClick(e) {
-    const currentElement = e.currentTarget;
-    const parentElement = currentElement.parentElement;
-    if (parentElement) {
-      setSiblingActive(parentElement, "inactive");
-    }
-    blurAfterClick(e.currentTarget);
   }
 
   return (
@@ -39,7 +21,7 @@ function Header({menuLinks}) {
       <Themed.a className="skip-to-content-link" href="#primary">
         Skip to content
       </Themed.a>
-      <Link id="logo" to="/" onClick={reload} aria-label="Home">
+      <Link id="logo" to="/" onClick={handleClick} aria-label="Home">
         <StaticImage
           src="../../static/logo.png"
           alt="Logo"
@@ -65,13 +47,13 @@ function Header({menuLinks}) {
           <ul>
             {menuLinks && menuLinks.map(props => (
             <li key={props.name}>
-              <a href={props.link} onClick={handleClickedLink}>
+              <a href={props.link} onClick={handleClickedMenu}>
                 {props.name}
               </a>
             </li>
             ))}
             <li>
-              <a href={Pdf} rel="noreferrer" target="_blank" onClick={handleClickedLink}>
+              <a href={Pdf} rel="noreferrer" target="_blank" className="link-button" onClick={handleClickedMenu}>
                 Resume
               </a>
             </li>
@@ -81,13 +63,13 @@ function Header({menuLinks}) {
       <ul className="hide-on-mobile">
         {menuLinks && menuLinks.map(props => (
           <li key={props.name}>
-            <a href={props.link} onClick={handleClickedLink}>
+            <a href={props.link}>
               {props.name}
             </a>
           </li>
         ))}
         <li>
-          <a href={Pdf} rel="noreferrer" target="_blank" onClick={handleClick}>
+          <a href={Pdf} rel="noreferrer" target="_blank" className="link-button" onClick={handleClick}>
             Resume
           </a>
         </li>
