@@ -1,11 +1,12 @@
 import React from "react";
-import { Layout, Hero, Work, Contact } from "../components";
+import { Layout, Hero, Work, About, Contact } from "../components";
 
 function Home() {
   return (
     <Layout>
       <Hero/>
       <Work/>
+      <About/>
       <Contact/>
     </Layout>
   );

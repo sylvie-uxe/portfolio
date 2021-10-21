@@ -33,7 +33,7 @@ function Hero() {
                     </Themed.p>
                 </div>
                 <div className="flex-box">
-                    {/* <a href="#about"> */}
+                    <a href="#about">
                         <StaticImage
                             id="heroPicture"
                             src="../../../static/hero_color.png"
@@ -41,7 +41,7 @@ function Hero() {
                             placeholder="blurred"
                             width={400}
                             aria-hidden="true"/>
-                    {/* </a> */}
+                    </a>
                 </div>
             </div>
             <div className="spacer small"></div>

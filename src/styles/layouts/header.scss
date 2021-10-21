@@ -15,11 +15,11 @@ header {
         text-decoration: none;
     }
 
-    li>a:hover, li>a:active {
+    a, a:active, li>a:hover, li>a:active {
         color: var(--theme-ui-colors-primary);
     }
 
-    li>a:focus {
+    a:hover, a:focus, li>a:focus {
         outline: none;
         color: var(--theme-ui-colors-accent);
     }
