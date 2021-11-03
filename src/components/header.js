@@ -6,7 +6,7 @@ import { handleClick } from "../utils/dom";
 import ColorMode from "./color-mode";
 import { StaticImage }  from "gatsby-plugin-image";
 import { Button } from "theme-ui";
-import Pdf from "../../static/Sylvie_Donatien_2021_web.pdf";
+import Pdf from "../../static/Sylvie_Donatien_Resume.pdf";
 
 function Header({menuLinks}) {
   const [isMenuOpen, setMenuState] = useState(false);

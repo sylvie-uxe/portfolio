@@ -46,10 +46,10 @@ function Hero() {
             </div>
             <div className="spacer small"></div>
             <Themed.p>
-                I'm a User eXperience Designer and a Front-End Developer.
+                I'm a User eXperience Designer with a strong background in Software Engineering.
             </Themed.p>
             <Themed.p>
-                I'm passionate about bringing joy to people's lives through valuable and simple design, and performant and reliable code.
+                I'm passionate about bringing joy to people's lives through valuable and simple design.
             </Themed.p>
             <Themed.p>
                 Empathy, a constant search for improvement and a passion for learning
