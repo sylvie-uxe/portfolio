@@ -4,7 +4,7 @@ import { Themed } from 'theme-ui';
 import { blurAfterClick } from "../utils/dom";
 import { handleClick } from "../utils/dom";
 import ColorMode from "./color-mode";
-import { StaticImage }  from "gatsby-plugin-image";
+import Logo from "./logo";
 import { Button } from "theme-ui";
 import Pdf from "../../static/Sylvie_Donatien_Resume.pdf";
 
@@ -22,12 +22,7 @@ function Header({menuLinks}) {
         Skip to content
       </Themed.a>
       <Link id="logo" to="/" onClick={handleClick} aria-label="Home">
-        <StaticImage
-          src="../../static/logo.png"
-          alt="Logo"
-          placeholder="blurred"
-          width={60}
-          aria-hidden="true"/>
+        <Logo/>
       </Link>
       <div className="show-on-mobile">
         <ColorMode />
