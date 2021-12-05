@@ -203,7 +203,7 @@ export default function Covivre() {
           <p>I then proceeded to port digitally the paper wireframes in Adobe XD, linked the different screens together and added interactions.</p>
           <p>Click on the following screenshot to access the low-fidelity prototype:</p>
           <div className="illustration">
-            <a href="https://xd.adobe.com/view/89da4356-8a02-4514-8ee0-2f2368ea334c-dc89/" aria-label="Link to the low-fidelity prototype" target="_blank" rel="noreferrer">
+            <a href="https://xd.adobe.com/view/369b7dd9-e3bb-4372-b94d-99ede23fe4d5-63c8/" aria-label="Link to the low-fidelity prototype" target="_blank" rel="noreferrer">
               <StaticImage
                 src="../../../static/calypso/lo-fi_prototype.png"
                 alt="Low fidelity prototype of the website"
@@ -267,7 +267,7 @@ export default function Covivre() {
           </div>
           <p>Click on the following screenshot to access the high-fidelity prototype:</p>
           <div className="illustration">
-            <a href="https://xd.adobe.com/view/62033fc7-bb8e-41a6-9bcf-794c014e2e1e-3750/" aria-label="Link to the high-fidelity prototype" target="_blank" rel="noreferrer">
+            <a href="https://xd.adobe.com/view/a817bc8a-835e-4017-b527-f79962817f59-fd44/" aria-label="Link to the high-fidelity prototype" target="_blank" rel="noreferrer">
               <StaticImage
                 src="../../../static/calypso/hi-fi_prototype.png"
                 alt="High-fidelity prototype of the website"

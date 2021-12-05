@@ -127,7 +127,7 @@ export default function ComUnity() {
           <p>I identified multiple problems in a usability study conducted on 4 participants. I solved those problems in a second version of the low-fidelity prototype.</p>
           <p>Click on the following screenshot to access the low-fidelity prototype modified after the usability study:</p>
           <div className="illustration">
-            <a href="https://xd.adobe.com/view/77a8f065-79fa-4c6c-8d95-672f0733fd81-22fb/" aria-label="Link to the low-fidelity prototype" target="_blank" rel="noreferrer">
+            <a href="https://xd.adobe.com/view/fcd1628f-b871-442f-a54c-421e006be835-a982/" aria-label="Link to the low-fidelity prototype" target="_blank" rel="noreferrer">
               <StaticImage
                 src="../../../static/com-unity/lo-fi_prototype.png"
                 alt="Low fidelity prototype of the app"
@@ -169,7 +169,7 @@ export default function ComUnity() {
           </div>
           <p>Click on the following screenshot to access the high-fidelity prototype of the app on mobile:</p>
           <div className="illustration">
-            <a href="https://xd.adobe.com/view/b235a427-85a2-4692-9b49-b91d9e14351c-e766/" aria-label="Link to the high-fidelity prototype" target="_blank" rel="noreferrer">
+            <a href="https://xd.adobe.com/view/c8f3ef07-f137-4bb1-8d14-eefc9c43f485-9da0/" aria-label="Link to the high-fidelity prototype" target="_blank" rel="noreferrer">
               <StaticImage
                 src="../../../static/com-unity/hi-fi_prototype.png"
                 alt="High-fidelity prototype of the app"
